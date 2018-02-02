@@ -19,3 +19,15 @@ class Car {
     return 'vroom';
   }
 }
+
+describe('Gokart', () => {
+  it('can park', () =>{
+    const car = new Car();
+    assert.equal(car.park(), 'stopped');
+  });
+
+  it('can drive', () => {
+    const car = new Car();
+    assert.equal(car.drive(), 'vroom');
+  })
+});
